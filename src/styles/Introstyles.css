@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+.intro_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.btnhome {
+  background-color: transparent;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-family: "Inconsolata";
+  font-size: 20px;
+  margin-top: 30px;
+  transition: 0.25s;
+  font-weight: 600;
+  width: 200px;
+}
+
+.btnhome:hover {
+  cursor: pointer;
+  background-color: #8a2be2;
+  box-shadow: 2px 2px #ffbf00;
+  color: white;
+}
+
+.intro {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inconsolata";
+  font-size: 90px;
+}
+
+#more {
+  font-size: 30px;
+}
+
+#heytext,
+#name {
+  font-weight: bolder;
+}
+
+.intro2 {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  font-family: "Inconsolata";
+  font-size: 90px;
+}
+
+.lang_intro {
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  padding-top: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-top: 5px;
+  text-align: left;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.lang_row1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.lang_row2 {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-style {
+  padding-top: 10px;
+}
+
+.description-style {
+  padding-left: 5px;
+}
+
+#heytext2 {
+  text-align: center;
+  margin-top: 200px;
+  position: relative;
+  bottom: -60px;
+  font-weight: 500;
+  margin-bottom: 70px;
+  padding: 0;
+  color: black;
+  text-shadow: 2px 1px 10px #ffbf00;
+  /* background-color: rgba(255, 255, 255, 0.15); */
+}
+
+.lang_intro:hover {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 50%;
+  }
+
+  span {
+    font-size: 60px;
+    border-radius: 15px;
+  }
+  .lang_intro:first-child {
+    margin-top: 50px;
+  }
+  .lang_intro {
+    width: 350px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+  .intro2 {
+    flex-direction: column;
+  }
+  .shape1 {
+    left: -124%;
+  }
+  .shape2 {
+    left: -130%;
+  }
+}

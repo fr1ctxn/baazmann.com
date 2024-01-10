@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+img {
+  width: 100%;
+}
+
+header {
+  z-index: 1000;
+  position: relative;
+  width: 80%;
+  height: 100px;
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0.01em 0.01em 200px;
+}
+
+.logo {
+  width: 180px;
+  margin-top: 0px;
+}
+nav .logo {
+  display: none;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Inconsolata";
+  font-size: 20px;
+  color: #212526;
+  display: block;
+  margin: 0 2px;
+  font-weight: 700;
+  padding: 15px;
+  transition: 0.2px;
+  border-radius: 30px;
+}
+
+nav ul li a:hover {
+  background: #ebe7fd;
+}
+
+nav ul li a.active {
+  background: #8a2be2;
+  color: white;
+  box-shadow: 2px 2px #ffbf00;
+}
+
+.hamburger {
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.hamburger:hover {
+  background: #f6f4ff;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #212526;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    display: none;
+    width: 80%;
+    padding: 0 20px;
+  }
+  nav {
+    position: absolute;
+    left: -300;
+    top: 0;
+    z-index: 999;
+    width: 280px;
+    height: 100vh;
+    background-color: #fefefe;
+    transition: 0.2s;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+  #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  nav .logo {
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  nav ul li a {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  nav ul {
+    display: block;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+}
