@@ -21,7 +21,7 @@
 
 .btnhome:hover {
   cursor: pointer;
-  background-color: #8a2be2;
+  background-color: #8e2ba2;
   box-shadow: 2px 2px #ffbf00;
   color: white;
 }
@@ -46,68 +46,9 @@
 .intro2 {
   margin: 5%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: "Inconsolata";
   font-size: 90px;
-}
-
-.lang_intro {
-  width: 500px;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: row;
-  font-size: 15px;
-  padding-top: 10px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  margin-top: 5px;
-  text-align: left;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-  transition: all 0.2s ease-in-out 0s;
-}
-
-.description {
-  margin-top: 20px;
-}
-
-.lang_row1 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.lang_row2 {
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-}
-
-.img-style {
-  padding-top: 10px;
-}
-
-.description-style {
-  padding-left: 5px;
-}
-
-#heytext2 {
-  text-align: center;
-  margin-top: 200px;
-  position: relative;
-  bottom: -60px;
-  font-weight: 500;
-  margin-bottom: 70px;
-  padding: 0;
-  color: black;
-  text-shadow: 2px 1px 10px #ffbf00;
-  /* background-color: rgba(255, 255, 255, 0.15); */
-}
-
-.lang_intro:hover {
-  transform: scale(1.1);
-  z-index: 100;
 }
 
 @media (max-width: 768px) {

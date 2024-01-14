@@ -1,0 +1,25 @@
+.shape {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: -3%;
+  content: "";
+  border-radius: 50px;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  animation: fadeIn 1s ease-out 0.5s both;
+}
+
+.shape1 {
+  right: -20%;
+  background-color: #ffbf00;
+  z-index: -999;
+  transition: 0.5s;
+}
+
+.shape2 {
+  right: -22%;
+  background-color: #8a2be2;
+  z-index: -999;
+  transition: 0.6s;
+}

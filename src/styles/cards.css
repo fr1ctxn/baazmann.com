@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+.lang_intro {
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  padding-top: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  text-align: left;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.lang_row1 {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang_row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-style {
+  padding-top: 10px;
+}
+
+.description-style {
+  padding-left: 5px;
+}
+
+.lang_intro:hover {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+#reactcard:hover .reactcard-image {
+  transform: perspective(900px) translateY(15%) rotateX(25deg);
+  animation: rotation infinite 5s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
