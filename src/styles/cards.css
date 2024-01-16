@@ -1,33 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
 .lang_intro {
-  width: 500px;
-  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  font-family: "Inconsolata", monospace; /* Adding the imported font */
   display: flex;
   flex-direction: row;
   font-size: 15px;
-  padding-top: 10px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
   padding: 20px;
   margin-bottom: 15px;
   margin-top: 5px;
   text-align: left;
+  backdrop-filter: blur(10px);
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out 0s;
+  position: relative; /* Added to facilitate absolute positioning */
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.lang_intro:hover {
+  width: 400px; /* Adjust width on hover for a larger card */
+}
+
+.lang_intro:hover .img-style {
+  transform: translateX(-50%);
+}
+
+.lang_intro:hover .description {
+  opacity: 1;
+}
+
+.lang_intro img {
+  opacity: 1;
+  width: 150px;
+  height: auto;
+  position: absolute; /* Added for absolute positioning */
+  left: 50%; /* Centering the image initially */
+  transition: opacity 0.5s ease-in-out;
+  transform: translateX(-50%); /* Centering the image initially */
+}
+
+.lang_intro:hover img {
+  display: none;
+  opacity: 0;
 }
 
 .description {
-  margin-top: 20px;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out;
 }
 
-.lang_row1 {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-}
-
+.lang_row1,
 .lang_row2 {
   display: flex;
   flex-wrap: wrap;
@@ -42,35 +70,16 @@
   padding-left: 5px;
 }
 
-.lang_intro:hover {
-  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
-  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+.code {
+  border-radius: 15px;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  font-size: 55px;
+  margin: 120px 0px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#reactcard:hover .reactcard-image {
-  transform: perspective(900px) translateY(15%) rotateX(25deg);
-  animation: rotation infinite 5s;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(360deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  75% {
-    transform: rotate(270deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.lang_intro:hover .skills_container {
+  background-color: rgba(0, 100, 255, 1);
 }
