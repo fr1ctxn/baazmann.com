@@ -7,7 +7,7 @@ function Services() {
     <>
       <Navbar />
       <Shapes />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

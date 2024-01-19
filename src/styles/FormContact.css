@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0.01em 0.01em 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+
+.formbtn {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+  transition: 0.25s;
+
+  width: 150px;
+}
+
+.formbtn:hover {
+  cursor: pointer;
+  background-color: rgb(142, 43, 162);
+  box-shadow: 2px 2px #ffbf00;
+  color: white;
+}
+
+#message {
+  resize: vertical;
+}
+@media only screen and (max-width: 768px) {
+  label {
+    font-size: 20px;
+  }
+
+  input,
+  textarea {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: aliceblue;
+    box-sizing: border-box;
+  }
+}

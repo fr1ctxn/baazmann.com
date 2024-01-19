@@ -20,16 +20,24 @@ function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Services">Services</Link>
+              <Link to="/" className="disabled">
+                Services
+              </Link>
             </li>
             <li>
-              <Link to="/Blog">Blog</Link>
+              <Link to="/" className="disabled">
+                Blog
+              </Link>
             </li>
             <li>
-              <Link to="/Socials">Socials</Link>
+              <Link to="/" className="disabled">
+                Socials
+              </Link>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/" className="disabled">
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

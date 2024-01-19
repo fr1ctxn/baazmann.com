@@ -43,7 +43,7 @@ const Intro = () => {
           </button>
         </div>
       </div>
-      <Homecards />
+      {/* <Homecards /> */}
     </div>
   );
 };

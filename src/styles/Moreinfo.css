@@ -1,30 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
-
-.shape1_more {
-  margin-top: -100px;
-  border-radius: 150px;
-  width: 300px;
-  height: 300px;
-  background-color: #8e2ba2;
-}
-
-.shape2_more {
-  border-radius: 150px;
-  width: 300px;
-  height: 300px;
-  margin-top: -200px;
-  margin-left: 70px;
-  margin-right: 20px;
-  background-color: #ffbf00;
-}
-
-.container {
-  font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 .moreinfo {
-  margin-top: 200px;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 300px;
   display: flex;
   flex-direction: row;
+}
+
+.longdescription {
+  font-family: "Roboto";
+  border-right: solid 2px black;
+  padding-right: 25px;
+  margin-left: 65px;
+  font-size: 20px;
+  width: 50%;
+  font-weight: 550;
+}
+
+@media only screen and (max-width: 700px) {
+  .longdescription {
+    display: none;
+    font-size: 20px;
+    margin-left: 10px;
+    border: none;
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .moreinfo {
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
 }

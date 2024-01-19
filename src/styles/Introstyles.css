@@ -21,7 +21,7 @@
 
 .btnhome:hover {
   cursor: pointer;
-  background-color: #8e2ba2;
+  background-color: rgb(142, 43, 162);
   box-shadow: 2px 2px #ffbf00;
   color: white;
 }
@@ -38,9 +38,14 @@
   font-size: 30px;
 }
 
-#heytext,
 #name {
-  font-weight: bolder;
+  font-family: "inconsolata";
+  /* letter-spacing: 0.17em; */
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.17em solid pink;
+  animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
 }
 
 .intro2 {
@@ -50,33 +55,36 @@
   font-family: "Inconsolata";
   font-size: 90px;
 }
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   * {
     font-size: 50%;
   }
+  body {
+    overflow-x: hidden;
+  }
+  #name {
+    position: relative;
+    margin-left: 0px;
+  }
+  .btnhome {
+    z-index: 2000;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
-  span {
-    font-size: 60px;
-    border-radius: 15px;
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
   }
-  .lang_intro:first-child {
-    margin-top: 50px;
-  }
-  .lang_intro {
-    width: 350px;
-  }
-
-  .description {
-    font-size: 15px;
-  }
-  .intro2 {
-    flex-direction: column;
-  }
-  .shape1 {
-    left: -124%;
-  }
-  .shape2 {
-    left: -130%;
+  50% {
+    border-color: pink;
   }
 }

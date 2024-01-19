@@ -55,3 +55,25 @@
 }
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@media only screen and (max-width: 768px) {
+  .footer-section li {
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .social-icons a {
+    font-size: 4rem;
+  }
+  .hidesonsmall {
+    display: none;
+  }
+  .footer-section p {
+    font-size: 15px;
+  }
+  .sectionleft {
+    width: 70%;
+  }
+
+  .footer-bottom {
+    font-size: 30px;
+  }
+}

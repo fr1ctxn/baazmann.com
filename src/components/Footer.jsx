@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-section">
+        <div className="footer-section sectionleft">
           <h3>About Me</h3>
           <p>
             This is the portfolio website of a Front-end web developer named
@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="footer-section">
+        <div className="footer-section hidesonsmall">
           <h3>Quick Links</h3>
           <ul>
             <li>

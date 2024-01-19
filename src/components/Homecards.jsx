@@ -7,6 +7,7 @@ import imgJS from "../images/js.png";
 import "../styles/cards.css";
 import imgCode from "../images/coding.png";
 
+import "../styles/Shapes.css";
 function Homecards() {
   const [showCards, setShowCards] = useState(false);
 
@@ -63,16 +64,17 @@ function Homecards() {
               description="(JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat."
             />
           </div>
-          <img
-            className="imgCode"
-            src={imgCode}
+          {/* <img
+            src={imgShapeViolet}
+            className="shapeviolet"
             style={{
-              width: "600px",
-              height: "auto",
-              position: "absolute",
-              right: "30%",
+              width: "400px",
+              height: "auto ",
+              position: " absolute",
+              left: "-5%",
             }}
-          />
+          /> */}
+
           <div className="lang_row2">
             <SkillSection
               title="HTML"
